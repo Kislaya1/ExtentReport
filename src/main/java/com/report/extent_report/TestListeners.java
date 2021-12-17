@@ -1,9 +1,8 @@
-package com.extent.report;
+package com.report.extent_report;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
-import org.testng.ITestResult;
 
 
 public class TestListeners implements ISuiteListener, ITestListener {
