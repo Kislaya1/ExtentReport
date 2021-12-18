@@ -3,7 +3,9 @@ services:
   klov:
     image: anshooarora/klov:1.0.1
     container_name: klov
+    depends_on:
+      - mongo_db
     environment:
-      - SPRING_DATA_MONGODB_URI=mongodb://localhost:27017
+      - SPRING_DATA_MONGODB_URI=mongodb://host.docker.internal:27017
     ports:
       - 80:80
