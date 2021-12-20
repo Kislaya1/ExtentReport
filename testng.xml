@@ -3,7 +3,7 @@
 <suite name="API Test Suite">
 
     <listeners>
-        <listener class-name="com.report.test.listeners.TestListener"/>
+        <listener class-name="com.report.test.extent_report.TestListener"/>
     </listeners>
 
     <test name="API Test" parallel="methods" thread-count="3">

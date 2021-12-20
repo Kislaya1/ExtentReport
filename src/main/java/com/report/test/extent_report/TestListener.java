@@ -1,4 +1,4 @@
-package com.report.test.listeners;
+package com.report.test.extent_report;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;

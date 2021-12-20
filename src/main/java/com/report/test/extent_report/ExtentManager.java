@@ -1,4 +1,4 @@
-package com.report.test.listeners;
+package com.report.test.extent_report;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -7,11 +7,11 @@ public final class ExtentManager {
 
   private ExtentManager() {}
 
-  synchronized static ExtentTest getTest() {
+  static synchronized ExtentTest getTest() {
     return exTest.get();
   }
 
-  synchronized static void setTest(ExtentTest test) {
+  static synchronized void setTest(ExtentTest test) {
     exTest.set(test);
   }
 }
