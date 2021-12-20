@@ -1,7 +1,7 @@
 # <span style="font-family: Calibri; font-size: 2.8em;"> Automation Reporting </span>
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Introduction </span>
-Hi All, I had created this demo-project which will in-cooperate Extent Reports, Allure and Report Portal (Allure and Report Portal are still in development phase). 
+Hi All, I had created this demo-project which will in-cooperate Extent Reports, Allure and Report Portal **(Allure and Report Portal are still in development phase).** 
 Anyone can use this demo-project as it will be helpful for a quick-start.
     
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Project Overview </span>
@@ -48,7 +48,7 @@ There are some issues which I had faced while creating this project. Documenting
 ### a) Docker Issue : 
 I was facing one issue while creating Docker Compose Yml file (integrating mongo db with Klov Server). Since Klov is having dependencies with Mongo Db, so klov will use the MongoDB URL.<br>
     
-**Issue -** "com.mongodb.MongoSocketOpenException: Exception opening socket"<br>
+**Issue -** "com.mongodb.MongoSocketOpenException: Exception opening socket"<br><br>
 **Solution -** Use "SPRING_DATA_MONGODB_URI" as "mongodb://host.docker.internal:27017" instead of "mongodb://127.0.0.1:27017".<br>
 
 [Docker Issue](https://github.com/extent-framework/klov/issues/66)
@@ -56,7 +56,7 @@ I was facing one issue while creating Docker Compose Yml file (integrating mongo
 ### b) Klov Old version issue : 
 In case if you are using old version of extent report and Klov report (<= 4.x), then there is an issue, as Build Number were coming as #null in Klov report and failures were also not getting reported.<br>
 
-**Issue -** Klov does not report on failures and build numbers are shows as nulls <br>
+**Issue -** Klov does not report on failures and build numbers are shows as nulls <br><br>
 **Solution -** Upgrade everything to the latest version and switch from "Extent HTMLReport" to "ExtentSparkReporter" <br>
 
 [Old Version Issue](https://github.com/extent-framework/klov/issues/67)
@@ -64,4 +64,4 @@ In case if you are using old version of extent report and Klov report (<= 4.x), 
 ### c) Threading Issue :
 In case even if you are using latest Extent Report & Klov Report version, you will still face one issue as Project name is getting generated but when you will click on the project it will appear blank and also there will be 1 duplicate project created.<br>
         
-**Solution -** Use ThreadLocal when calling Extent Test class variable, and also make use of "synchronized" methods as it will ensure threads handling. This is already present under **ExtentManager & ExtentReport Class** <br>
+**Solution -** Use ThreadLocal when calling Extent Test class variable, and also make use of "synchronized" methods as it will ensure threads handling. This is already present under **ExtentManager & ExtentReport Class** <br><br>
