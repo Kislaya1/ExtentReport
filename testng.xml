@@ -6,7 +6,7 @@
         <listener class-name="com.report.test.listeners.TestListener"/>
     </listeners>
 
-    <test name="API Test" parallel="methods" thread-count="3">
+    <test name="API Test">
         <classes>
             <class name="com.report.test.extent_report.Testing"/>
         </classes>

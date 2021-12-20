@@ -1,5 +1,10 @@
 version: '2'
 services:
+  mongo_db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    restart: always
   klov:
     image: anshooarora/klov:1.0.1
     container_name: klov

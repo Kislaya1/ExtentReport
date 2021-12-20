@@ -1,58 +1,33 @@
 package com.report.test.listeners;
 
-import com.aventstack.extentreports.ExtentTest;
-import com.report.test.extent_report.BaseTest;
-import org.testng.ITestContext;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListener extends BaseTest implements ITestListener {
-
-  ExtentTest test;
-
-  private static String getTestMethodName(ITestResult iTestResult) {
-    return iTestResult.getMethod().getConstructorOrMethod().getName();
+public class TestListener implements ISuiteListener, ITestListener {
+  @Override
+  public void onStart(ISuite suite) {
+    ExtentReport.initReport();
   }
 
   @Override
-  public void onStart(ITestContext iTestContext) {
-    System.out.println("I am in onStart method " + iTestContext.getName());
+  public void onFinish(ISuite suite) {
+    ExtentReport.tearDownReport();
   }
 
   @Override
-  public void onFinish(ITestContext iTestContext) {
-    System.out.println("I am in onFinish method " + iTestContext.getName());
+  public void onTestStart(ITestResult result) {
+    ExtentReport.createTest(result.getName());
   }
 
   @Override
-  public void onTestStart(ITestResult iTestResult) {
-    System.out.println("I am in onTestStart method " + getTestMethodName(iTestResult) + " start");
-    test = extentReports.createTest(getTestMethodName(iTestResult) + " started");
+  public void onTestSuccess(ITestResult result) {
+    ExtentManager.getTest().pass("Test Passed");
   }
 
   @Override
-  public void onTestSuccess(ITestResult iTestResult) {
-    System.out.println(
-        "I am in onTestSuccess method " + getTestMethodName(iTestResult) + " succeed");
-    test.pass("Test passed");
-  }
-
-  @Override
-  public void onTestFailure(ITestResult iTestResult) {
-    System.out.println(
-        "I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
-    test.fail("Test Failed");
-  }
-
-  @Override
-  public void onTestSkipped(ITestResult iTestResult) {
-    System.out.println(
-        "I am in onTestSkipped method " + getTestMethodName(iTestResult) + " skipped");
-    test.skip("Test Skipped");
-  }
-
-  @Override
-  public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-    test.skip("Test Failed");
+  public void onTestFailure(ITestResult result) {
+    ExtentManager.getTest().fail("Test Failed");
   }
 }
