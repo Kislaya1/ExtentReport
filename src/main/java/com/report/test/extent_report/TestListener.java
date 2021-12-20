@@ -1,11 +1,13 @@
 package com.report.test.extent_report;
 
+import lombok.SneakyThrows;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener implements ISuiteListener, ITestListener {
+  @SneakyThrows
   @Override
   public void onStart(ISuite suite) {
     ExtentReport.initReport();
