@@ -46,26 +46,22 @@ You can use [Local Klov](localhost:80) to access Klov Report generated.** <br>
 There are some issues which I had faced while creating this project. Documenting these so that it would be helpful for all.
     
 ### a) Docker Issue : 
-    I was facing one issue while creating Docker Compose Yml file (integrating mongo db with Klov Server).
-    Since Klov is having dependencies with Mongo Db, so klov will use the MongoDB URL.
+I was facing one issue while creating Docker Compose Yml file (integrating mongo db with Klov Server). Since Klov is having dependencies with Mongo Db, so klov will use the MongoDB URL.<br>
     
-    **Issue** - "com.mongodb.MongoSocketOpenException: Exception opening socket"
-    **Solution** - Use "SPRING_DATA_MONGODB_URI" as "mongodb://host.docker.internal:27017" instead of "mongodb://127.0.0.1:27017".
+**Issue -** "com.mongodb.MongoSocketOpenException: Exception opening socket"<br>
+**Solution -** Use "SPRING_DATA_MONGODB_URI" as "mongodb://host.docker.internal:27017" instead of "mongodb://127.0.0.1:27017".<br>
 
 [Docker Issue](https://github.com/extent-framework/klov/issues/66)
 
 ### b) Klov Old version issue : 
-    In case if you are using old version of extent report and Klov report (<= 4.x), then there is an issue, as Build Number were coming as #null
-    in Klov report and failures were also not getting reported.
+In case if you are using old version of extent report and Klov report (<= 4.x), then there is an issue, as Build Number were coming as #null in Klov report and failures were also not getting reported.<br>
 
-    **Issue** - Klov does not report on failures and build numbers are shows as nulls
-    **Solution** - Upgrade everything to the latest version and switch from "Extent HTMLReport" to "ExtentSparkReporter"
+**Issue -** Klov does not report on failures and build numbers are shows as nulls <br>
+**Solution -** Upgrade everything to the latest version and switch from "Extent HTMLReport" to "ExtentSparkReporter" <br>
 
 [Old Version Issue](https://github.com/extent-framework/klov/issues/67)
 
 ### c) Threading Issue :
-    In case even if you are using latest Extent Report & Klov Report version, you will still face one issue as Project name 
-    is getting generated but when you will click on the project it will appear blank and also there will be 1 duplicate project created.
+In case even if you are using latest Extent Report & Klov Report version, you will still face one issue as Project name is getting generated but when you will click on the project it will appear blank and also there will be 1 duplicate project created.<br>
         
-    **Solution** : Use below code when calling Extent Test class, and also make use of "synchronized" methods as it will ensure threads handling.
-    **Code** : - private static final ThreadLocal<ExtentTest> exTest = new ThreadLocal<>();
+**Solution -** Use ThreadLocal when calling Extent Test class variable, and also make use of "synchronized" methods as it will ensure threads handling. This is already present under **ExtentManager & ExtentReport Class** <br>
