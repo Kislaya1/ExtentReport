@@ -28,7 +28,7 @@
         Issue - "com.mongodb.MongoSocketOpenException: Exception opening socket"
         Solution - Use "SPRING_DATA_MONGODB_URI" as "mongodb://host.docker.internal:27017" instead of "mongodb://127.0.0.1:27017".
         
-[Refer this Link](https://github.com/extent-framework/klov/issues/66)
+[Docker Issue](https://github.com/extent-framework/klov/issues/66)
         
         b) Klov Old version issue : 
         In case if you are using old version of extent report and Klov report (<= 4.x), then there is an issue, as Build Number were coming as #null
@@ -36,7 +36,7 @@
         Issue - Klov does not report on failures and build numbers are shows as nulls
         Solution - Upgrade everything to the latest version and switch from "Extent HTMLReport" to "ExtentSparkReporter"
 
-[Refer this Link](https://github.com/extent-framework/klov/issues/67)
+[Old Version Issue](https://github.com/extent-framework/klov/issues/67)
         
         c) Threading Issue :
         In case even if you are using latest Extent Report & Klov Report version, you will still face one issue as Project name 
