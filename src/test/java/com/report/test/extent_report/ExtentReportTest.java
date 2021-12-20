@@ -3,7 +3,7 @@ package com.report.test.extent_report;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Testing {
+public class ExtentReportTest {
 
   @Test
   public void scenario1() {

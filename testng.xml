@@ -8,7 +8,7 @@
 
     <test name="API Test" parallel="methods" thread-count="3">
         <classes>
-            <class name="com.report.test.extent_report.Testing"/>
+            <class name="com.report.test.extent_report.ExtentReportTest"/>
         </classes>
     </test>
 </suite>
