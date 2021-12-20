@@ -1,7 +1,7 @@
 # <span style="font-family: Calibri; font-size: 2.8em;"> Automation Reporting </span>
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Introduction </span>
-Hi All, I had created this demo-project which will in-cooperate *Extent Reports With Klov integration*, *Allure and Report Portal* **(Allure and Report Portal are still in development phase).** 
+Hi All, I had created this demo-project which will in-cooperate **Extent Reports With Klov integration, Allure and Report Portal** *(Allure and Report Portal are still in development phase).* 
 Anyone can use this demo-project as it will be helpful for a quick-start.
     
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Project Overview </span>
