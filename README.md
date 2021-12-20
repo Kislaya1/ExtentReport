@@ -45,7 +45,7 @@ You can use [Local Klov](localhost:80) to access Klov Report generated.** <br>
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Issues Faced </span>
 There are some issues which I had faced while creating this project. Documenting these so that it would be helpful for all.
     
-###a) Docker Issue : 
+### a) Docker Issue : 
         I was facing one issue while creating Docker Compose Yml file (integrating mongo db with Klov Server).
         Since Klov is having dependencies with Mongo Db, so klov will use the MongoDB URL.
         Issue - "com.mongodb.MongoSocketOpenException: Exception opening socket"
@@ -53,7 +53,7 @@ There are some issues which I had faced while creating this project. Documenting
 
 [Docker Issue](https://github.com/extent-framework/klov/issues/66)
 
-###b) Klov Old version issue : 
+### b) Klov Old version issue : 
         In case if you are using old version of extent report and Klov report (<= 4.x), then there is an issue, as Build Number were coming as #null
         in Klov report and failures were also not getting reported.
         Issue - Klov does not report on failures and build numbers are shows as nulls
@@ -61,7 +61,7 @@ There are some issues which I had faced while creating this project. Documenting
 
 [Old Version Issue](https://github.com/extent-framework/klov/issues/67)
 
-###c) Threading Issue :
+### c) Threading Issue :
         In case even if you are using latest Extent Report & Klov Report version, you will still face one issue as Project name 
         is getting generated but when you will click on the project it will appear blank and also there will be 1 duplicate project created.
         
