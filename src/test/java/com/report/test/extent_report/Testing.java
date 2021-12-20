@@ -14,6 +14,6 @@ public class Testing {
   @Test
   public void scenario2() {
     System.out.println("Inside Scenario 2 ");
-    Assert.fail();
+    Assert.assertEquals(true, false);
   }
 }

@@ -7,11 +7,11 @@ public final class ExtentManager {
 
   private ExtentManager() {}
 
-  static ExtentTest getTest() {
+  synchronized static ExtentTest getTest() {
     return exTest.get();
   }
 
-  static void setTest(ExtentTest test) {
+  synchronized static void setTest(ExtentTest test) {
     exTest.set(test);
   }
 }

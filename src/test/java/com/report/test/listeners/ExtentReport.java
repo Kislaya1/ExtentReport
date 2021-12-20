@@ -11,7 +11,7 @@ public final class ExtentReport {
 
   private ExtentReport() {}
 
-  public static void initReport() {
+  public synchronized static void initReport() {
     extentReports = new ExtentReports();
     ExtentSparkReporter spark =
         new ExtentSparkReporter(System.getProperty("user.dir") + "/report-output/index.html");
@@ -19,12 +19,12 @@ public final class ExtentReport {
     extentReports.attachReporter(spark, klov);
   }
 
-  public static void createTest(String testName) {
+  public synchronized static void createTest(String testName) {
     test = extentReports.createTest("My test : " + testName);
     ExtentManager.setTest(test);
   }
 
-  public static void tearDownReport() {
+  public synchronized static void tearDownReport() {
     extentReports.flush();
   }
 }
