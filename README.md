@@ -5,7 +5,7 @@ Hi All, I had created this demo-project which will in-cooperate Extent Reports, 
 Anyone can use this demo-project as it will be helpful for a quick-start.
     
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Project Overview </span>
-Below are the key points in my project : -
+Below are the key points in my project : - <br>
 **a) Klov Integration :** 
     Klov is a part of Extent Reports and is generally used to view all the old builds which were executed earlier.
 
