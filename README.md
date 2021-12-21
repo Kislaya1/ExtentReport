@@ -47,7 +47,7 @@ worrying about MongoDb installation). You can use [Local Klov](localhost:80) to 
 
     2. docker-compose down : Stopping all the running containers which are getting executed in above 1st step.
 
-**3. Run the maven command - mvn clean install to run the project.** <br>
+**3. Run the maven command : "mvn clean install" to run the project.** <br>
 **4. Check the report at "report-output" folder.**<br>
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Issues Faced </span>
