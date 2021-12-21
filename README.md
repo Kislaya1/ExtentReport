@@ -20,10 +20,6 @@ the report for current executed build. (it will not contain older build run repo
 I had also created a PDF file for the current report which is generated using **"Extent Spark Reporter"**. Anyone can
 use it to send to your PMs, Stakeholder etc to get a complete view of your report in PDF format. <br>
 
-**d) Report Sending through Email :** <br>
-I am also sending my Report through Email.Anyone can configure his / her email id so that report is send to the required
-mail id.<br>
-
 **NOTE : Docker Compose Yml File : <br>
 I had created a docker compose yml file which can be used for quick starting the KLOV server in your local (without
 worrying about MongoDb installation). You can use [Local Klov](localhost:80) to access Klov Report generated.** <br>
@@ -50,6 +46,9 @@ worrying about MongoDb installation). You can use [Local Klov](localhost:80) to 
 #### <span style="font-family: Calibri; font-size: 2.8em;"> Note : Run the command "docker-compose up" from 2nd time after above steps is successfully executed. </span>
 
     2. docker-compose down : Stopping all the running containers which are getting executed in above 1st step.
+
+**3. Run the maven command - mvn clean install to run the project.** <br>
+**4. Check the report at "report-output" folder.**<br>
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Issues Faced </span>
 
