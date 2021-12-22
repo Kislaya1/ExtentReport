@@ -6,6 +6,8 @@ Hi All, I had created this demo-project which will in-cooperate **Extent Reports
 Report Portal** *(Allure and Report Portal are still in development phase).*
 Anyone can use this demo-project as it will be helpful for a quick-start.
 
+**NOTE: There are no designing principles that I had incorporated in my project so as to keep it simple.** 
+
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Project Overview </span>
 
 Below are the key points in my project : - <br><br>
@@ -32,7 +34,8 @@ worrying about MongoDb installation). You can use [Local Klov](localhost:80) to 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Pre-Requisite </span>
 
 **1. Docker Installation.** <br>
-**2. Any of your favorite IDE.** <br>
+**2. Maven Installed in your local.**<br>
+**3. Any of your favorite IDE.** <br>
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Execution </span>
 
