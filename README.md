@@ -2,8 +2,7 @@
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Introduction </span>
 
-Hi All, I had created this demo-project which will in-cooperate **Extent Reports With Klov integration, Allure and
-Report Portal** *(Allure and Report Portal are still in development phase).*
+Hi All, I had created this demo-project which will in-cooperate **Extent Reports With Klov integration.**
 Anyone can use this demo-project as it will be helpful for a quick-start.
 
 **NOTE: There are no designing principles that I had incorporated in my project so as to keep it simple.** 
