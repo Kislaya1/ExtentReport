@@ -7,85 +7,85 @@ public class ExtentReportTest {
 
   @Test
   public void scenario1() {
-    System.out.println("Inside Scenario 1 ");
+    ExtentLogger.logInfo("Inside Scenario 1 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario2() {
-    System.out.println("Inside Scenario 2 ");
+    ExtentLogger.logInfo("Inside Scenario 2 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario3() {
-    System.out.println("Inside Scenario 3 ");
+    ExtentLogger.logInfo("Inside Scenario 3 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario4() {
-    System.out.println("Inside Scenario 4 ");
+    ExtentLogger.logInfo("Inside Scenario 4 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario5() {
-    System.out.println("Inside Scenario 5 ");
+    ExtentLogger.logInfo("Inside Scenario 5 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario6() {
-    System.out.println("Inside Scenario 6 ");
+    ExtentLogger.logInfo("Inside Scenario 6 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario7() {
-    System.out.println("Inside Scenario 7 ");
+    ExtentLogger.logInfo("Inside Scenario 7 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario8() {
-    System.out.println("Inside Scenario 8 ");
+    ExtentLogger.logInfo("Inside Scenario 8 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario9() {
-    System.out.println("Inside Scenario 9 ");
+    ExtentLogger.logInfo("Inside Scenario 9 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario10() {
-    System.out.println("Inside Scenario 1 ");
+    ExtentLogger.logInfo("Inside Scenario 10 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario11() {
-    System.out.println("Inside Scenario 11 ");
+    ExtentLogger.logInfo("Inside Scenario 11 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario12() {
-    System.out.println("Inside Scenario 12 ");
+    ExtentLogger.logInfo("Inside Scenario 12 ");
     Assert.assertEquals(true, false);
   }
 
   @Test
   public void scenario13() {
-    System.out.println("Inside Scenario 13 ");
+    ExtentLogger.logInfo("Inside Scenario 13 ");
     Assert.assertEquals(true, true);
   }
 
   @Test
   public void scenario14() {
-    System.out.println("Inside Scenario 14 ");
+    ExtentLogger.logInfo("Inside Scenario 14 ");
     Assert.assertEquals(true, false);
   }
 }

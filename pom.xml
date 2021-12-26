@@ -23,6 +23,11 @@
             <version>5.0.8</version>
         </dependency>
         <dependency>
+            <artifactId>rest-assured</artifactId>
+            <groupId>io.rest-assured</groupId>
+            <version>4.4.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>klov-reporter</artifactId>
             <version>5.0.8</version>

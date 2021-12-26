@@ -31,7 +31,7 @@ public final class ExtentReport {
     extentReports = new ExtentReports();
     ExtentPDFReporter pdf = new ExtentPDFReporter(reportPdfFile);
     pdf.loadXMLConfig(xmlConfigFile);
-    //pdf.loadJSONConfig(jsonConfigFile);
+    // pdf.loadJSONConfig(jsonConfigFile);
     ExtentSparkReporter spark = new ExtentSparkReporter(reportFile);
     ExtentKlovReporter klov = new ExtentKlovReporter(PROJECT_NAME).initWithDefaultSettings();
     extentReports.attachReporter(spark, klov, pdf);
